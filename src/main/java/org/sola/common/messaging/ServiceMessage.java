@@ -45,6 +45,7 @@ public class ServiceMessage {
     private static final String EJB_SOURCE = MSG_PREFIX + "ejbsource";
     private static final String EJB_TRANSACTION = MSG_PREFIX + "ejbtransaction";
     private static final String ADMIN_WS = MSG_PREFIX + "adminservice";
+    private static final String EJB_ADMINISTRATIVE = MSG_PREFIX + "ejbadministrative";
     
     // <editor-fold defaultstate="collapsed" desc="Test Messages">  
     /** sertest001 - Unit Test Message */
@@ -132,4 +133,8 @@ public class ServiceMessage {
     // Admin Web-service
     /** seradminservice001 - Username "{0}" already exists. */
     public static final String ADMIN_WS_USER_EXISTS = ADMIN_WS + "001";
+    
+    // Administrative EJB
+    /** serejbadministrative001 - No deed or lease number has been assigned to this deed/lease. */
+    public static final String EJB_ADMINISTRATIVE_DEED_NUM_REQUIRED = EJB_ADMINISTRATIVE + "001";
 }
