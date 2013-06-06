@@ -147,7 +147,6 @@ public class ClientMessage {
      * clignrl023 - refresh Dashboard
      */
     public static final String GENERAL_BACK_TO_DASHBOARD = GENERAL + "023";
-    
     // Service Messages
     /**
      * cliserv001 - Unable to initialize the {0} service. The reason is: {1}
@@ -412,7 +411,6 @@ public class ClientMessage {
      * clichck100 - Area should have a value.
      */
     public static final String CHECK_NOTNULL_AREA = CHECK + "100";
-    
     /**
      * clichck200 - Notes field must be less than 4000 characters in length.
      */
@@ -421,7 +419,6 @@ public class ClientMessage {
      * clichck201 - Notes field must be less than 1000 characters in length.
      */
     public static final String CHECK_COMMENT_LENGTH = CHECK + "201";
-    
     // Application messages
     /**
      * cliapp001 - Select document to attach digital copy.
@@ -750,7 +747,8 @@ public class ClientMessage {
      */
     public static final String BAUNIT_CUSTOM_LEASE_CONDITION_EMTY = BAUNIT + "022";
     /**
-     * clibaunit023 - {0} has no registration number. It will be assigned automatically after saving property object.
+     * clibaunit023 - {0} has no registration number. It will be assigned
+     * automatically after saving property object.
      */
     public static final String BAUNIT_RRR_NO_REGISTRATION_NUMBER = BAUNIT + "023";
     /**
@@ -758,14 +756,14 @@ public class ClientMessage {
      */
     public static final String BAUNIT_HAS_NO_PARCELS = BAUNIT + "024";
     /**
-     * clibaunit025 - The following warnings were found, which may affect report generation. Do you want to proceed?
+     * clibaunit025 - The following warnings were found, which may affect report
+     * generation. Do you want to proceed?
      */
     public static final String BAUNIT_RRR_REPORT_WARNINGS = BAUNIT + "025";
     /**
      * clibaunit026 - Enter lease rejection reason
      */
     public static final String BAUNIT_LEASE_REJECTION_REASON_TITLE = BAUNIT + "026";
-    
     // General error messages
     /**
      * clierrs001 - Can't cerate a new file. {0}
@@ -798,18 +796,16 @@ public class ClientMessage {
      * closed. Do you want to proceed?
      */
     public static final String CONFIRM_SYSTEM_WILL_BE_CLOSED = GENERAL_CONFIRM + "002";
-    
-    
     /**
      * cliconfirm003 - You are about changing used language. The window will be
-     * closed and opened again and you will lose all unsaved data. Do you want to proceed?
+     * closed and opened again and you will lose all unsaved data. Do you want
+     * to proceed?
      */
     public static final String CONFIRM_CHANGE_LANGUAGE = GENERAL_CONFIRM + "003";
     /**
      * cliconfirm004 - Are you sure you want to remove record?
      */
     public static final String CONFIRM_REMOVE_RECORD = GENERAL_CONFIRM + "004";
-    
     // Help messages
     /**
      * clihelp001 - HelpSet - Exception:{0} Path: {1} not found
@@ -1203,7 +1199,18 @@ public class ClientMessage {
      * cliprgs040 - Getting property...
      */
     public static final String PROGRESS_MSG_BA_UNIT_GETTING = PROGRESSMSG + "040";
-    
+    /**
+     * cliprgs100 - Opening checklist form...
+     */
+    public static final String PROGRESS_MSG_OPEN_CHECKLIST = PROGRESSMSG + "100";
+    /**
+     * cliprgs101 - Opening site inspection form...
+     */
+    public static final String PROGRESS_MSG_OPEN_SITE_INSPECTION = PROGRESSMSG + "101";
+    /**
+     * cliprgs102 - Opening survey form...
+     */
+    public static final String PROGRESS_MSG_OPEN_SURVEY = PROGRESSMSG + "102";
     /**
      * cli_bulk_operations_001 - The destination attribute already exist! You
      * can remove it before adding it again.
