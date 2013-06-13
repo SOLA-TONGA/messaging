@@ -1215,6 +1215,19 @@ public class ClientMessage {
      * cliprgs103 - Opening minister briefing form...
      */
     public static final String PROGRESS_MSG_OPEN_MINISTER_BRIEFING = PROGRESSMSG + "103";
+        /**
+     * cliprgs104 - Opening cabinet submission form...
+     */
+    public static final String PROGRESS_MSG_OPEN_CABINET_SUBMISSION = PROGRESSMSG + "104";
+        /**
+     * cliprgs105 - Opening draft deed form...
+     */
+    public static final String PROGRESS_MSG_OPEN_DRAFT_DEED = PROGRESSMSG + "105";
+        /**
+     * cliprgs106 - Opening sign deed form...
+     */
+    public static final String PROGRESS_MSG_OPEN_SIGN_DEED = PROGRESSMSG + "106";
+    
     /**
      * cli_bulk_operations_001 - The destination attribute already exist! You
      * can remove it before adding it again.
