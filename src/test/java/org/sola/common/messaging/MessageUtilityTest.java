@@ -1,28 +1,30 @@
 /**
  * ******************************************************************************************
- * Copyright (C) 2012 - Food and Agriculture Organization of the United Nations (FAO).
- * All rights reserved.
+ * Copyright (C) 2012 - Food and Agriculture Organization of the United Nations
+ * (FAO). All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
  *
- *    1. Redistributions of source code must retain the above copyright notice,this list
- *       of conditions and the following disclaimer.
- *    2. Redistributions in binary form must reproduce the above copyright notice,this list
- *       of conditions and the following disclaimer in the documentation and/or other
- *       materials provided with the distribution.
- *    3. Neither the name of FAO nor the names of its contributors may be used to endorse or
- *       promote products derived from this software without specific prior written permission.
+ * 1. Redistributions of source code must retain the above copyright notice,this
+ * list of conditions and the following disclaimer. 2. Redistributions in binary
+ * form must reproduce the above copyright notice,this list of conditions and
+ * the following disclaimer in the documentation and/or other materials provided
+ * with the distribution. 3. Neither the name of FAO nor the names of its
+ * contributors may be used to endorse or promote products derived from this
+ * software without specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
- * SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,PROCUREMENT
- * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,STRICT LIABILITY,OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
- * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT,STRICT LIABILITY,OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
  * *********************************************************************************************
  */
 /*
@@ -31,6 +33,7 @@
  */
 package org.sola.common.messaging;
 
+import java.awt.Toolkit;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import org.junit.Ignore;
@@ -64,7 +67,6 @@ public class MessageUtilityTest {
 
     @Before
     public void setUp() {
-        
     }
 
     @After
@@ -72,8 +74,8 @@ public class MessageUtilityTest {
     }
 
     /**
-     * Checks that a default message is returned for a null code. This test will fail if the
-     * default locale is not en_US
+     * Checks that a default message is returned for a null code. This test will
+     * fail if the default locale is not en_US
      */
     @Test
     public void testGetLocalizedMessage_NullCode() {
@@ -97,8 +99,8 @@ public class MessageUtilityTest {
     }
 
     /**
-     * Checks that a default message is returned for an invalid code. This test will fail if the
-     * default locale is not en_US.
+     * Checks that a default message is returned for an invalid code. This test
+     * will fail if the default locale is not en_US.
      */
     @Test
     public void testGetLocalizedMessage_InvalidCode() {
@@ -336,7 +338,8 @@ public class MessageUtilityTest {
     }
 
     /**
-     * Checks that a default message is returned for an invalid code for the UK locale
+     * Checks that a default message is returned for an invalid code for the UK
+     * locale
      */
     @Test
     public void testGetLocalizedMessage_InvalidCodeUKLocale() {
@@ -360,7 +363,8 @@ public class MessageUtilityTest {
     }
 
     /**
-     * Checks a valid message can be retrieved from the Service package for the UK locale
+     * Checks a valid message can be retrieved from the Service package for the
+     * UK locale
      */
     @Test
     public void testGetLocalizedMessage_ServiceTestMsgUKLocale() {
@@ -383,8 +387,8 @@ public class MessageUtilityTest {
     }
 
     /**
-     * Checks that a message that is not in the named locale bundle is retrieved from the default
-     * bundle
+     * Checks that a message that is not in the named locale bundle is retrieved
+     * from the default bundle
      */
     @Test
     public void testGetLocalizedMessage_ServiceTestMsgUKLocale_Default() {
@@ -405,8 +409,9 @@ public class MessageUtilityTest {
     }
 
     /**
-     * Checks that the test messages can be correctly displayed. Ignored as this method displays
-     * a dialog window. Should be used to verify changes to the displayMessage only. 
+     * Checks that the test messages can be correctly displayed. Ignored as this
+     * method displays a dialog window. Should be used to verify changes to the
+     * displayMessage only.
      */
     @Test
     @Ignore
@@ -423,8 +428,8 @@ public class MessageUtilityTest {
     }
 
     /**
-     * Checks that all message constants on the ServiceMessage class have a message in the
-     * default Bundle. 
+     * Checks that all message constants on the ServiceMessage class have a
+     * message in the default Bundle.
      */
     @Test
     public void checkServiceMessagesExist() {
@@ -450,8 +455,8 @@ public class MessageUtilityTest {
     }
 
     /**
-     * Checks that all message constants on the ClientMessage class have a message in the
-     * default Bundle. 
+     * Checks that all message constants on the ClientMessage class have a
+     * message in the default Bundle.
      */
     @Test
     public void checkClientMessagesExist() {
@@ -477,8 +482,8 @@ public class MessageUtilityTest {
     }
 
     /**
-     * Checks that all message constants on the GisMessage class have a message in the
-     * default Bundle. 
+     * Checks that all message constants on the GisMessage class have a message
+     * in the default Bundle.
      */
     @Test
     public void checkGISMessagesExist() {
@@ -603,66 +608,70 @@ public class MessageUtilityTest {
         assertEquals(JOptionPane.QUESTION_MESSAGE, MessageUtility.getJOptionPaneMessageType(result));
         assertEquals(JOptionPane.YES_NO_OPTION, MessageUtility.getJOptionPaneOptionType(result));
     }
-    
-    /** Tests the various displayMessage apis with a null messageResponder */
-     @Test
+
+    /**
+     * Tests the various displayMessage apis with a null messageResponder
+     */
+    @Test
     public void testDisplayMessage_SuppressedNoResponder() {
         System.out.println("displayMessage_SuppressedNoResponder");
         String msgCode = ServiceMessage.TEST001;
         MessageUtility.suppressDialog(null);
-        
+
         int result = MessageUtility.displayMessage(msgCode);
-        assertEquals(0, result); 
-        
-        result = MessageUtility.displayMessage(msgCode, Arrays.asList("one", "2")); 
-        assertEquals(0, result); 
-        
-        result = MessageUtility.displayMessage(msgCode, new Object[]{"one", "2"}); 
         assertEquals(0, result);
-        
-        result = MessageUtility.displayMessage(msgCode, "ERR_001"); 
+
+        result = MessageUtility.displayMessage(msgCode, Arrays.asList("one", "2"));
         assertEquals(0, result);
-        
-        result = MessageUtility.displayMessage(msgCode, "ERR_001", Arrays.asList("one", "2")); 
+
+        result = MessageUtility.displayMessage(msgCode, new Object[]{"one", "2"});
         assertEquals(0, result);
-        
-        result = MessageUtility.displayMessage(msgCode, "ERR_001", new Object[]{"one", "2"}); 
+
+        result = MessageUtility.displayMessage(msgCode, "ERR_001");
+        assertEquals(0, result);
+
+        result = MessageUtility.displayMessage(msgCode, "ERR_001", Arrays.asList("one", "2"));
+        assertEquals(0, result);
+
+        result = MessageUtility.displayMessage(msgCode, "ERR_001", new Object[]{"one", "2"});
         assertEquals(0, result);
 
     }
-     
-     /** Tests the various displayMessage apis with a messageResponder */
-     @Test
+
+    /**
+     * Tests the various displayMessage apis with a messageResponder
+     */
+    @Test
     public void testDisplayMessage_SuppressedWithResponder() {
         System.out.println("displayMessage_SuppressedWithResponder");
         String msgCode = ServiceMessage.TEST001;
-        MessageUtility.suppressDialog(new MessageResponder() { 
-            public int getResponse(LocalizedMessage msg, String errorNum, int defaultButton)
-            {
-                return 5; 
+        MessageUtility.suppressDialog(new MessageResponder() {
+            public int getResponse(LocalizedMessage msg, String errorNum, int defaultButton) {
+                return 5;
             }
         });
-        
+
         int result = MessageUtility.displayMessage(msgCode);
-        assertEquals(5, result); 
-        
-        result = MessageUtility.displayMessage(msgCode, Arrays.asList("one", "2")); 
-        assertEquals(5, result); 
-        
-        result = MessageUtility.displayMessage(msgCode, new Object[]{"one", "2"}); 
         assertEquals(5, result);
-        
-        result = MessageUtility.displayMessage(msgCode, "ERR_001"); 
+
+        result = MessageUtility.displayMessage(msgCode, Arrays.asList("one", "2"));
         assertEquals(5, result);
-        
-        result = MessageUtility.displayMessage(msgCode, "ERR_001", Arrays.asList("one", "2")); 
+
+        result = MessageUtility.displayMessage(msgCode, new Object[]{"one", "2"});
         assertEquals(5, result);
-        
-        result = MessageUtility.displayMessage(msgCode, "ERR_001", new Object[]{"one", "2"}); 
+
+        result = MessageUtility.displayMessage(msgCode, "ERR_001");
+        assertEquals(5, result);
+
+        result = MessageUtility.displayMessage(msgCode, "ERR_001", Arrays.asList("one", "2"));
+        assertEquals(5, result);
+
+        result = MessageUtility.displayMessage(msgCode, "ERR_001", new Object[]{"one", "2"});
         assertEquals(5, result);
 
     }
-       @Test
+
+    @Test
     public void testGetLocalizedMessage_ServiceNullParamMsg1() {
         System.out.println("getLocalizedMessage_ServiceNullParamMsg1");
         String msgCode = ServiceMessage.TEST002;
