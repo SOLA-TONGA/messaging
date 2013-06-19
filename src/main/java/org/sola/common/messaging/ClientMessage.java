@@ -1227,6 +1227,10 @@ public class ClientMessage {
      * cliprgs106 - Opening sign deed form...
      */
     public static final String PROGRESS_MSG_OPEN_SIGN_DEED = PROGRESSMSG + "106";
+    /**
+     * cliprgs107 - Opening item number form...
+     */
+    public static final String PROGRESS_MSG_OPEN_ITEM_NUMBER = PROGRESSMSG + "107";
     
     /**
      * cli_bulk_operations_001 - The destination attribute already exist! You
