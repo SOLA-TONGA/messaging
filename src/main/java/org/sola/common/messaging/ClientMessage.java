@@ -52,6 +52,7 @@ public class ClientMessage {
     private static final String BR = MSG_PREFIX + "br";
     private static final String PROGRESSMSG = MSG_PREFIX + "prgs";
     private static final String BULK_OPERATIONS = MSG_PREFIX + "_bulk_operations_";
+    private static final String SECURITY = MSG_PREFIX + "sec";
     // <editor-fold defaultstate="collapsed" desc="Test Messages">  
     /**
      * clitest001 - Unit Test Message
@@ -147,6 +148,14 @@ public class ClientMessage {
      * clignrl023 - refresh Dashboard
      */
     public static final String GENERAL_BACK_TO_DASHBOARD = GENERAL + "023";
+    /**
+     * clignrl024 - Assign
+     */
+    public static final String GENERAL_LABELS_ASSIGN = GENERAL + "024";
+    /**
+     * clignrl025 - Unassign
+     */
+    public static final String GENERAL_LABELS_UNASSIGN = GENERAL + "025";
     // Service Messages
     /**
      * cliserv001 - Unable to initialize the {0} service. The reason is: {1}
@@ -167,8 +176,8 @@ public class ClientMessage {
     public static final String SEARCH_SELECT_APPLICATION = SEARCH + "003";
     // Check / Validation Messages
     /**
-     * clichck001 - The selected application cannot be assigned or unassigned
-     * until its fees are paid.
+     * clichck001 - Application {0} cannot be assigned or unassigned until its
+     * fees are paid.
      */
     public static final String CHECK_FEES_NOT_PAID = CHECK + "001";
     /**
@@ -468,15 +477,15 @@ public class ClientMessage {
      */
     public static final String APPLICATION_ASSIGN = APPLICATION + "011";
     /**
-     * cliapp012 - Application has been assigned
+     * cliapp012 - Applications have been assigned
      */
     public static final String APPLICATION_ASSIGNED = APPLICATION + "012";
     /**
-     * cliapp013 - Application will be unassigned from user "{0}"
+     * cliapp013 - You can't unassign from yourself. Application number {0}
      */
-    public static final String APPLICATION_UNASSIGN = APPLICATION + "013";
+    public static final String APPLICATION_UNASSIGN_FROM_SELF_FORBIDDEN = APPLICATION + "013";
     /**
-     * cliapp014 - Application has been unassigned
+     * cliapp014 - Applications have been unassigned
      */
     public static final String APPLICATION_UNASSIGNED = APPLICATION + "014";
     /**
@@ -599,6 +608,14 @@ public class ClientMessage {
      * cliapp042 - Application service \"{0}\", has been successfully started.
      */
     public static final String APPLICATION_SERVICE_START_SUCCESS = APPLICATION + "042";
+    /**
+     * cliapp043 - You can't unassign from others. Application number {0}
+     */
+    public static final String APPLICATION_UNASSIGN_FROM_OTHERS_FORBIDDEN = APPLICATION + "043";
+    /**
+     * cliapp044 - Are you sure you want to unassign selected applications?
+     */
+    public static final String APPLICATION_CONFIRM_UNASSIGN = APPLICATION + "044";
     // Reports messages.
     /**
      * clirpt001 - Report generation failed. Error details: {0}
@@ -1200,6 +1217,10 @@ public class ClientMessage {
      */
     public static final String PROGRESS_MSG_BA_UNIT_GETTING = PROGRESSMSG + "040";
     /**
+     * cliprgs041 - Generating report...
+     */
+    public static final String PROGRESS_MSG_GENERATING_REPORT = PROGRESSMSG + "041";
+    /**
      * cliprgs100 - Opening checklist form...
      */
     public static final String PROGRESS_MSG_OPEN_CHECKLIST = PROGRESSMSG + "100";
@@ -1215,15 +1236,15 @@ public class ClientMessage {
      * cliprgs103 - Opening minister briefing form...
      */
     public static final String PROGRESS_MSG_OPEN_MINISTER_BRIEFING = PROGRESSMSG + "103";
-        /**
+    /**
      * cliprgs104 - Opening cabinet submission form...
      */
     public static final String PROGRESS_MSG_OPEN_CABINET_SUBMISSION = PROGRESSMSG + "104";
-        /**
+    /**
      * cliprgs105 - Opening draft deed form...
      */
     public static final String PROGRESS_MSG_OPEN_DRAFT_DEED = PROGRESSMSG + "105";
-        /**
+    /**
      * cliprgs106 - Opening sign deed form...
      */
     public static final String PROGRESS_MSG_OPEN_SIGN_DEED = PROGRESSMSG + "106";
@@ -1231,7 +1252,6 @@ public class ClientMessage {
      * cliprgs107 - Opening item number form...
      */
     public static final String PROGRESS_MSG_OPEN_ITEM_NUMBER = PROGRESSMSG + "107";
-    
     /**
      * cli_bulk_operations_001 - The destination attribute already exist! You
      * can remove it before adding it again.
@@ -1255,4 +1275,16 @@ public class ClientMessage {
      */
     public static final String BULK_OPERATIONS_LOAD_SOURCE_TYPE_NOT_FOUND =
             BULK_OPERATIONS + "004";
+    /**
+     * clisec001 - Your password is due to expire in {0} days.
+     */
+    public static final String SECURITY_WARN_PWORD_EXPIRY = SECURITY + "001";
+    /**
+     * clisec002 - Your password has been set by an administrator.
+     */
+    public static final String SECURITY_PASSWORD_SET_BY_ADMIN = SECURITY + "002";
+    /**
+     * clisec003 - Your password has expired.
+     */
+    public static final String SECURITY_PASSWORD_EXPIRED = SECURITY + "003";
 }

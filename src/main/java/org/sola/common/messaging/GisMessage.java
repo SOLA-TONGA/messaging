@@ -51,6 +51,7 @@ public class GisMessage {
     private static final String LEFT_PANEL = MSG_PREFIX + "_left_panel_";
     private static final String IMPORT_FILE = MSG_PREFIX + "_import_file_";
     private static final String PRINT_PUBLIC_DISPLAY = MSG_PREFIX + "_public_display_";
+    private static final String SPATIAL_UNIT_GROUP = MSG_PREFIX + "_spatial_unit_group_";
    // General Messages
     /** gisgnrl001 - Error starting the service */
     public static final String GENERAL_ERROR_STARTING_SERVICE = GENERAL + "001";
@@ -146,6 +147,10 @@ public class GisMessage {
     public static final String KML_EXPORT_FILE_LOCATION = GEOTOOLS + "54";
      /** gisgeotools555 - No features are selected for export  */
     public static final String KML_EXPORT_NO_FEATURE_SELECTED = GEOTOOLS + "55";
+    
+     /** gisgeotools556 - WMS Layer is not rendered. Most probably the wms server is not available. Switch the layer off in order not to get this message. */
+    public static final String WMSLAYER_LAYER_RENDER_ERROR = GEOTOOLS + "56";
+    
     
     //CADASTRE CHANGE
     /** The point has to fall on an current node or to a line*/
@@ -293,9 +298,9 @@ public class GisMessage {
     /* The last part is not set.*/
     public static final String PRINT_PUBLIC_DISPLAY_FILTER_NOT_FOUND = PRINT_PUBLIC_DISPLAY + "01";
 
-    /* Error while centering map in the public display map functionality.*/
-    public static final String PRINT_PUBLIC_DISPLAY_CENTER_MAP_ERROR = PRINT_PUBLIC_DISPLAY + "02";
-    
+    /* There are no cadastre objects with this last part found.*/
+    public static final String PRINT_PUBLIC_DISPLAY_CENTER_LAST_PART_CO_NOT_FOUND = PRINT_PUBLIC_DISPLAY + "02";
+        
     // <editor-fold defaultstate="collapsed" desc="Test Messages">  
     /** gistest001 - Unit Test Message */
     public static final String TEST001 = TEST + "001";
