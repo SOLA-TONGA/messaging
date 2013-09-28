@@ -98,8 +98,11 @@ public class ServiceMessage {
     public static final String EXCEPTION_INVALID_SECURITY_HEADER = EXCEPTION + "009";
     /* serexcp010 - The file cannot be attached due to its size ({0}MB) */
     public static final String EXCEPTION_FILE_TOO_BIG = EXCEPTION + "010";
+    /* serexcp012 - The numbers or name used for this property is already in use. */
+    public static final String EXCEPTION_BAUNIT_HAS_DUPLICATE_NAME = EXCEPTION + "012";
     /* serexcp020 - The file cannot be attached due to its size ({0}MB) */
     public static final String EXCEPTION_NETWORK_SCAN_FOLDER = EXCEPTION + "020";
+
 
     
     // Business Rule Messages
