@@ -428,6 +428,8 @@ public class ClientMessage {
      * clichck201 - Notes field must be less than 1000 characters in length.
      */
     public static final String CHECK_COMMENT_LENGTH = CHECK + "201";
+    public static final String CHECK_NOTNULL_REGISTRYBOOKREF = CHECK + "202";
+    public static final String CHECK_NOTNULL_TERM = CHECK + "203";
     // Application messages
     /**
      * cliapp001 - Select document to attach digital copy.
