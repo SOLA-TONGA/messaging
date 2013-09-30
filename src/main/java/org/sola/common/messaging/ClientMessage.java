@@ -618,6 +618,10 @@ public class ClientMessage {
      * cliapp044 - Are you sure you want to unassign selected applications?
      */
     public static final String APPLICATION_CONFIRM_UNASSIGN = APPLICATION + "044";
+    /**
+     * cliapp100 - The service could not be started?
+     */
+    public static final String APPLICATION_FAIL_SERVICE_START = APPLICATION + "100";
     // Reports messages.
     /**
      * clirpt001 - Report generation failed. Error details: {0}
