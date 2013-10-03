@@ -156,6 +156,8 @@ public class ClientMessage {
      * clignrl025 - Unassign
      */
     public static final String GENERAL_LABELS_UNASSIGN = GENERAL + "025";
+    
+    public static final String GENERAL_LOAD_FILE_FAILURE = GENERAL + "050";
     // Service Messages
     /**
      * cliserv001 - Unable to initialize the {0} service. The reason is: {1}
