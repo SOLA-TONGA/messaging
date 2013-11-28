@@ -432,6 +432,7 @@ public class ClientMessage {
     public static final String CHECK_COMMENT_LENGTH = CHECK + "201";
     public static final String CHECK_NOTNULL_REGISTRYBOOKREF = CHECK + "202";
     public static final String CHECK_NOTNULL_TERM = CHECK + "203";
+    public static final String CHECK_NOTNULL_RRRREF = CHECK + "204";
     // Application messages
     /**
      * cliapp001 - Select document to attach digital copy.
