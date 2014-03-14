@@ -623,6 +623,10 @@ public class ClientMessage {
      * cliapp100 - The service could not be started?
      */
     public static final String APPLICATION_FAIL_SERVICE_START = APPLICATION + "100";
+        /**
+     * cliapp101 - The service could not start. Property {0} is not registered in the system.
+     */
+    public static final String APPLICATION_NO_BA_UNIT_FOR_SERVICE = APPLICATION + "101";
     // Reports messages.
     /**
      * clirpt001 - Report generation failed. Error details: {0}
