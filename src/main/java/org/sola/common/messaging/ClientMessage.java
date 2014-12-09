@@ -1272,6 +1272,16 @@ public class ClientMessage {
      */
     public static final String PROGRESS_MSG_OPEN_HOD_REVIEW = PROGRESSMSG + "109";
     /**
+     * cliprgs110 - Opening draughting form...
+     */
+    public static final String PROGRESS_MSG_OPEN_DRAUGHTING_FORM = PROGRESSMSG + "110";
+    /**
+     * cliprgs111 - Opening draughting search...
+     */
+    public static final String PROGRESS_MSG_OPEN_DRAUGHTING_SEARCH = PROGRESSMSG + "111";
+    /**
+     * 
+     * 
      * cli_bulk_operations_001 - The destination attribute already exist! You
      * can remove it before adding it again.
      */
