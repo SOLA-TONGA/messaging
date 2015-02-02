@@ -1272,13 +1272,13 @@ public class ClientMessage {
      */
     public static final String PROGRESS_MSG_OPEN_HOD_REVIEW = PROGRESSMSG + "109";
     /**
-     * cliprgs110 - Opening draughting form...
+     * cliprgs110 - Opening drafting form...
      */
-    public static final String PROGRESS_MSG_OPEN_DRAUGHTING_FORM = PROGRESSMSG + "110";
+    public static final String PROGRESS_MSG_OPEN_DRAFTING_FORM = PROGRESSMSG + "110";
     /**
-     * cliprgs111 - Opening draughting search...
+     * cliprgs111 - Opening drafting search...
      */
-    public static final String PROGRESS_MSG_OPEN_DRAUGHTING_SEARCH = PROGRESSMSG + "111";
+    public static final String PROGRESS_MSG_OPEN_DRAFTING_SEARCH = PROGRESSMSG + "111";
     /**
      * 
      * 
