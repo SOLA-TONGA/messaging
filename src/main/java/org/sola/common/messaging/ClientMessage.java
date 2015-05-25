@@ -51,6 +51,7 @@ public class ClientMessage {
     private static final String PROGRESSMSG = MSG_PREFIX + "prgs";
     private static final String BULK_OPERATIONS = MSG_PREFIX + "_bulk_operations_";
     private static final String SECURITY = MSG_PREFIX + "sec";
+    private static final String DRAFTING = MSG_PREFIX + "draft";
     // <editor-fold defaultstate="collapsed" desc="Test Messages">  
     /**
      * clitest001 - Unit Test Message
@@ -1316,4 +1317,26 @@ public class ClientMessage {
      * clisec003 - Your password has expired.
      */
     public static final String SECURITY_PASSWORD_EXPIRED = SECURITY + "003";
+    
+    // Drafting messages
+    /**
+     * clidraft001 - Select item
+     */
+    public static final String DRAFT_SELECT_ITEM = DRAFTING + "001";
+    /**
+     * clidraft002 - You are about to save an Item.\nDo you want to proceed?
+     */
+    public static final String DRAFT_SAVE_CONFIRM = DRAFTING + "002";
+    /**
+     * clidraft003 - Item has been saved.
+     */
+    public static final String DRAFT_SAVED = DRAFTING + "003";
+    /**
+     * clidraft004 - Fill drafting fields
+     */
+    public static final String DRAFT_FILL_DRAFTING = DRAFTING + "004";
+    /**
+     * clidraft005 - Item has been created.
+     */
+    public static final String DRAFT_CREATED = DRAFTING + "005";
 }
