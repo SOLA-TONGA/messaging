@@ -1339,4 +1339,12 @@ public class ClientMessage {
      * clidraft005 - Item has been created.
      */
     public static final String DRAFT_CREATED = DRAFTING + "005";
+    /**
+     * clidraft006 - Are you sure you want to remove item {0}
+     */
+    public static final String DRAFT_REMOVE_ITEM = DRAFTING + "006";
+    /**
+     * clidraft007 - Item removed.
+     */
+    public static final String DRAFT_CONFIRM_REMOVE = DRAFTING + "007";
 }
