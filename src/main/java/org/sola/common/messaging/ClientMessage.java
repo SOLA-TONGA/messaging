@@ -52,6 +52,7 @@ public class ClientMessage {
     private static final String BULK_OPERATIONS = MSG_PREFIX + "_bulk_operations_";
     private static final String SECURITY = MSG_PREFIX + "sec";
     private static final String DRAFTING = MSG_PREFIX + "draft";
+    private static final String MINISTER = MSG_PREFIX + "minister";
     // <editor-fold defaultstate="collapsed" desc="Test Messages">  
     /**
      * clitest001 - Unit Test Message
@@ -1281,6 +1282,15 @@ public class ClientMessage {
      */
     public static final String PROGRESS_MSG_OPEN_DRAFTING_SEARCH = PROGRESSMSG + "111";
     /**
+     * cliprgs112 - Opening minister form...
+     */
+    public static final String PROGRESS_MSG_OPEN_MINISTER_FORM = PROGRESSMSG + "112";
+    /**
+     * cliprgs113 - Opening minister search...
+     */
+    public static final String PROGRESS_MSG_OPEN_MINISTER_SEARCH = PROGRESSMSG + "113";
+    
+    /**
      * 
      * 
      * cli_bulk_operations_001 - The destination attribute already exist! You
@@ -1347,4 +1357,36 @@ public class ClientMessage {
      * clidraft007 - Item removed.
      */
     public static final String DRAFT_CONFIRM_REMOVE = DRAFTING + "007";
+    
+    
+    // Minister messages
+    /**
+     * climinister001 - Select inward
+     */
+    public static final String MINISTER_SELECT_INWARD = MINISTER + "001";
+    /**
+     * climinister002 - You are about to save an inward.\nDo you want to proceed?
+     */
+    public static final String MINISTER_SAVE_CONFIRM = MINISTER + "002";
+    /**
+     * climinister003 - Inward has been saved.
+     */
+    public static final String MINISTER_SAVED = MINISTER + "003";
+    /**
+     * climinister004 - Fill minister fields
+     */
+    public static final String MINISTER_FILL_FIELDS = MINISTER + "004";
+    /**
+     * climinister005 - Inward has been created.
+     */
+    public static final String MINISTER_CREATED = MINISTER + "005";
+    /**
+     * climinister006 - Are you sure you want to remove inward for {0}?
+     */
+    public static final String MINISTER_REMOVE_INWARD = MINISTER + "006";
+    /**
+     * climinister007 - Inward removed.
+     */
+    public static final String MINISTER_CONFIRM_REMOVE = MINISTER + "007";
+    
 }
