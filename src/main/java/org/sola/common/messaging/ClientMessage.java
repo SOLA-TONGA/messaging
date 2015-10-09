@@ -1282,13 +1282,21 @@ public class ClientMessage {
      */
     public static final String PROGRESS_MSG_OPEN_DRAFTING_SEARCH = PROGRESSMSG + "111";
     /**
-     * cliprgs112 - Opening minister form...
+     * cliprgs112 - Opening minister inward form...
      */
-    public static final String PROGRESS_MSG_OPEN_MINISTER_FORM = PROGRESSMSG + "112";
+    public static final String PROGRESS_MSG_OPEN_MINISTER_INWARD_FORM = PROGRESSMSG + "112";
     /**
      * cliprgs113 - Opening minister search...
      */
     public static final String PROGRESS_MSG_OPEN_MINISTER_SEARCH = PROGRESSMSG + "113";
+    /**
+     * cliprgs114 - Opening minister lease form...
+     */
+    public static final String PROGRESS_MSG_OPEN_MINISTER_LEASE_FORM = PROGRESSMSG + "114";
+    /**
+     * cliprgs115 - Opening minister application form...
+     */
+    public static final String PROGRESS_MSG_OPEN_MINISTER_APPLICATION_FORM = PROGRESSMSG + "115";
     
     /**
      * 
@@ -1388,5 +1396,29 @@ public class ClientMessage {
      * climinister007 - Inward removed.
      */
     public static final String MINISTER_CONFIRM_REMOVE = MINISTER + "007";
+     /**
+     * climinister008 - You are about to save a lease record.\n Do you want to proceed?
+     */
+    public static final String MINISTER_LEASE_SAVE_CONFIRM = MINISTER + "008";
+    /**
+     * climinister009 - Lease record saved
+     */
+    public static final String MINISTER_LEASE_SAVED = MINISTER + "009";
+    /**
+     * climinister010 - Are you sure you want to remove Lease record for {0}?
+     */
+    public static final String MINISTER_REMOVE_LEASE = MINISTER + "010";
+    /**
+     * climinister011 - You are about to save a land application.\n Do you want to proceed?
+     */
+    public static final String MINISTER_APP_SAVE_CONFIRM = MINISTER + "011";
+    /**
+     * climinister012 - Land application saved.
+     */
+    public static final String MINISTER_APP_SAVED = MINISTER + "012";
+    /**
+     * climinister013 - Are you sure you want to remove land application for {0}?
+     */
+    public static final String MINISTER_REMOVE_APP = MINISTER + "013";
     
 }
